@@ -11,4 +11,7 @@ frame.place(relx=0.3, rely=0.1, relwidth=0.8, relheight=0.8)
 label = Label(frame, text="Add Data")
 label.grid(row=0, column=1)
 
+label = Label(frame, text="Name")
+label.grid(row=1, column=0)
+
 root.mainloop()
