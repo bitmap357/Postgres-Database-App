@@ -17,4 +17,8 @@ label.grid(row=1, column=0)
 entry_name = Entry(frame)
 entry_name.grid(row=1, column=1)
 
+label = Label(frame, text="Age")
+label.grid(row=2, column=0)
+
+
 root.mainloop()
