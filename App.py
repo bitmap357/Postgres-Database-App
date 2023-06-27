@@ -29,4 +29,7 @@ label.grid(row=3, column=0)
 entry_address = Entry(frame)
 entry_address.grid(row=3, column=1)
 
+button = Button(frame, text="Add")
+button.grid(row=4, column=1)
+
 root.mainloop()
