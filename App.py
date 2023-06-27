@@ -6,11 +6,11 @@ root = Tk()
 
 
 def get_data(name, age, address):
-    conn = psycopg2.connect(dbname="postgres!", user="postgres", password="snow9823", host="localhost", port="5432")
+    conn = psycopg2.connect(dbname="postgres", user="postgres", password="snow9823", host="localhost", port="5432")
     cur = conn.cursor()
     query = '''INSERT INTO student(NAME, AGE, ADDRESS) VALUES (%s, %s, %s);'''
     cur.execute(query, (name, age, address))
-    print('data inserted')
+    print('Data inserted')
     conn.commit()
     conn.close()
 
