@@ -3,6 +3,8 @@ import tkinter as tk
 
 root = Tk()
 
+def get_data(name, age, address):
+
 
 canvas = Canvas(root, height=480, width=900)
 canvas.pack()
