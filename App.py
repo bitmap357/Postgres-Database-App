@@ -1,9 +1,12 @@
 from tkinter import *
 import tkinter as tk
+import psycopg2
 
 root = Tk()
 
+
 def get_data(name, age, address):
+
 
 
 canvas = Canvas(root, height=480, width=900)
