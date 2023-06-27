@@ -14,4 +14,7 @@ label.grid(row=0, column=1)
 label = Label(frame, text="Name")
 label.grid(row=1, column=0)
 
+entry_name = Entry(frame)
+entry_name.grid(row=1, column=1)
+
 root.mainloop()
