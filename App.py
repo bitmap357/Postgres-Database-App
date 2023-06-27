@@ -10,6 +10,9 @@ def get_data(name, age, address):
     cur = conn.cursor()
     query = '''INSERT INTO student(NAME, AGE, ADDRESS) VALUES (%s, %s, %s);'''
     cur.execute(query, (name, age, address))
+    print('data inserted')
+    conn.commit()
+    conn.close()
 
 
 canvas = Canvas(root, height=480, width=900)
