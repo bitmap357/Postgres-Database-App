@@ -2,6 +2,8 @@ from tkinter import *
 import tkinter as tk
 
 root = Tk()
+
+
 canvas = Canvas(root, height=480, width=900)
 canvas.pack()
 
@@ -29,7 +31,7 @@ label.grid(row=3, column=0)
 entry_address = Entry(frame)
 entry_address.grid(row=3, column=1)
 
-button = Button(frame, text="Add")
+button = Button(frame, text="Add", command=lambda: get_data(entry_name.get(), entry_age.get(), entry_address.get()))
 button.grid(row=4, column=1)
 
 root.mainloop()
