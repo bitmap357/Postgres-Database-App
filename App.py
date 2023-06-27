@@ -24,7 +24,9 @@ entry_age = Entry(frame)
 entry_age.grid(row=2, column=1)
 
 label = Label(frame, text="Address")
-label.grid(row=2, column=0)
+label.grid(row=3, column=0)
 
+entry_address = Entry(frame)
+entry_address.grid(row=3, column=1)
 
 root.mainloop()
