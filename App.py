@@ -8,4 +8,7 @@ canvas.pack()
 frame = Frame()
 frame.place(relx=0.3, rely=0.1, relwidth=0.8, relheight=0.8)
 
+label = Label(frame, text="Add Data")
+label.grid(row=0, column=1)
+
 root.mainloop()
