@@ -3,7 +3,9 @@ import tkinter as tk
 
 root = Tk()
 canvas = Canvas(root, height=480, width=900)
+canvas.pack()
 
-
+frame = Frame()
+frame.place(relx=0.3, rely=0.1, relwidth=0.8, relheight=0.8)
 
 root.mainloop()
