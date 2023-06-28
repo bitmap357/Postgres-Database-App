@@ -26,6 +26,10 @@ def search(id):
     conn.close()
 
 
+def display_search(row):
+
+
+
 canvas = Canvas(root, height=480, width=900)
 canvas.pack()
 
