@@ -46,6 +46,6 @@ button = Button(frame, text="Add", command=lambda: get_data(entry_name.get(), en
 button.grid(row=4, column=1)
 
 label = Label(frame, text="Search")
-label.grid(row=3, column=0)
+label.grid(row=5, column=1)
 
 root.mainloop()
