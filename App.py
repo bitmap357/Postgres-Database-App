@@ -51,4 +51,7 @@ label.grid(row=5, column=1)
 label = Label(frame, text="Search by ID")
 label.grid(row=6, column=0)
 
+id_search = Entry(frame)
+id_search.grid(row=6, column=1)
+
 root.mainloop()
