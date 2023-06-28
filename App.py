@@ -19,7 +19,9 @@ def search(id):
     conn = psycopg2.connect(dbname="postgres", user="postgres", password="snow9823", host="localhost", port="5432")
     cur = conn.cursor()
     query = '''Select * from student where id=%s'''
-    cur.execute(query, (id))
+    cur.execute(query, id)
+    row = cur.fetchone()
+
 
 
 canvas = Canvas(root, height=480, width=900)
