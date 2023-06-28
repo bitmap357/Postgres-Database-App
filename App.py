@@ -15,6 +15,9 @@ def get_data(name, age, address):
     conn.close()
 
 
+def search(id):
+
+
 canvas = Canvas(root, height=480, width=900)
 canvas.pack()
 
