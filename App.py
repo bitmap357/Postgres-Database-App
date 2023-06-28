@@ -27,8 +27,8 @@ def search(id):
 
 
 def display_search(row):
-    listbox = Listbox(frame, width=20, height=5)
-    listbox.grid(row=9, column=0)
+    listbox = Listbox(frame, width=20, height=1)
+    listbox.grid(row=9, column=1)
     listbox.insert(END, row)
 
 
