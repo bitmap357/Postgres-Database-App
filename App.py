@@ -40,7 +40,8 @@ def display_all():
     row = cur.fetchall()
     listbox = Listbox(frame, width=20, height=5)
     listbox.grid(row=10, column=1)
-    listbox.insert(END, row)
+    for x in row:
+        listbox.insert(END, x)
 
 
 canvas = Canvas(root, height=480, width=900)
