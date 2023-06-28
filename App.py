@@ -13,6 +13,7 @@ def get_data(name, age, address):
     print('Data inserted')
     conn.commit()
     conn.close()
+    display_all()
 
 
 def search(id):
