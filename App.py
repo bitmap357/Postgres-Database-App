@@ -21,13 +21,14 @@ def search(id):
     query = '''Select * from student where id=%s'''
     cur.execute(query, id)
     row = cur.fetchone()
-    print(row)
+    display_search(row)
     conn.commit()
     conn.close()
 
 
 def display_search(row):
-
+    listbox = Listbox(frame, width=20, height=5)
+    listbox.grid(row=9, column=0)
 
 
 canvas = Canvas(root, height=480, width=900)
