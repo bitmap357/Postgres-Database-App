@@ -22,7 +22,8 @@ def search(id):
     cur.execute(query, id)
     row = cur.fetchone()
     print(row)
-
+    conn.commit()
+    conn.close()
 
 
 canvas = Canvas(root, height=480, width=900)
