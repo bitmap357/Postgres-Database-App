@@ -32,6 +32,8 @@ def display_search(row):
     listbox.insert(END, row)
 
 def display_all():
+    conn = psycopg2.connect(dbname="postgres", user="postgres", password="snow9823", host="localhost", port="5432")
+    cur = conn.cursor()
 
 
 canvas = Canvas(root, height=480, width=900)
