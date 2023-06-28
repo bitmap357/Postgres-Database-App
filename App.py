@@ -48,4 +48,7 @@ button.grid(row=4, column=1)
 label = Label(frame, text="Search")
 label.grid(row=5, column=1)
 
+label = Label(frame, text="Search by ID")
+label.grid(row=6, column=0)
+
 root.mainloop()
