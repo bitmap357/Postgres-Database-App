@@ -16,7 +16,8 @@ def get_data(name, age, address):
 
 
 def search(id):
-
+    conn = psycopg2.connect(dbname="postgres", user="postgres", password="snow9823", host="localhost", port="5432")
+    cur = conn.cursor()
 
 canvas = Canvas(root, height=480, width=900)
 canvas.pack()
