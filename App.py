@@ -21,7 +21,6 @@ def search(id):
     query = '''Select * from student where id=%s'''
     cur.execute(query, id)
     row = cur.fetchone()
-    display_search(row)
     conn.commit()
     conn.close()
 
@@ -29,6 +28,7 @@ def search(id):
 def display_search(row):
     listbox = Listbox(frame, width=20, height=5)
     listbox.grid(row=9, column=0)
+    listbox.insert(END, row)
 
 
 canvas = Canvas(root, height=480, width=900)
