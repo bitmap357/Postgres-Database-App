@@ -31,9 +31,11 @@ def display_search(row):
     listbox.grid(row=9, column=1)
     listbox.insert(END, row)
 
+
 def display_all():
     conn = psycopg2.connect(dbname="postgres", user="postgres", password="snow9823", host="localhost", port="5432")
     cur = conn.cursor()
+    query = '''Select * from student'''
 
 
 canvas = Canvas(root, height=480, width=900)
