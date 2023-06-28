@@ -31,6 +31,8 @@ def display_search(row):
     listbox.grid(row=9, column=1)
     listbox.insert(END, row)
 
+def display_all():
+
 
 canvas = Canvas(root, height=480, width=900)
 canvas.pack()
