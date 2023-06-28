@@ -21,6 +21,7 @@ def search(id):
     query = '''Select * from student where id=%s'''
     cur.execute(query, id)
     row = cur.fetchone()
+    display_search(row)
     conn.commit()
     conn.close()
 
