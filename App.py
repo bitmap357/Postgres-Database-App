@@ -45,4 +45,7 @@ entry_address.grid(row=3, column=1)
 button = Button(frame, text="Add", command=lambda: get_data(entry_name.get(), entry_age.get(), entry_address.get()))
 button.grid(row=4, column=1)
 
+label = Label(frame, text="Search")
+label.grid(row=3, column=0)
+
 root.mainloop()
