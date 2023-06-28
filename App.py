@@ -54,7 +54,7 @@ label.grid(row=6, column=0)
 id_search = Entry(frame)
 id_search.grid(row=6, column=1)
 
-button = Button(frame, text="Search")
+button = Button(frame, text="Search", command=lambda: search(id_search.get()))
 button.grid(row=6, column=2)
 
 root.mainloop()
