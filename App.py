@@ -38,7 +38,9 @@ def display_all():
     query = '''Select * from student'''
     cur.execute(query)
     row = cur.fetchall()
-
+    listbox = Listbox(frame, width=20, height=5)
+    listbox.grid(row=10, column=1)
+    listbox.insert(END, row)
 
 
 canvas = Canvas(root, height=480, width=900)
